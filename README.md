@@ -53,3 +53,16 @@ Second, the package policytree (after Sverdrup et al. (2019)) is used to create
 a tree-based rule in order to target units with very high or low treatment effects.
 Throughout the thesis explanatory comments are added both with regards to econometric
 theory and the code.
+
+### References in scientific literature:
+Athey, S., Tibshirani, J., & Wager, S. (2019). Generalized random forests.  
+Carter, M. R., Tjernström, E., & Toledo, P. (2019). Heterogeneous impact dynamics of a rural business development program in Nicaragua. Journal of Development Economics, 138, 77-98.  
+Carvalho, L. S., Meier, S., & Wang, S. W. (2016). Poverty and economic decision-making: Evidence from changes in financial resources at payday. American economic review, 106(2), 260-284.  
+Farbmacher, H., Kögel, H., & Spindler, M. (2021). Heterogeneous effects of poverty on attention. Labour Economics, 71, 102028.  
+Sverdrup, E., Kanodia, A., Zhou, Z., Athey, S., & Wager, S. (2020). policytree: Policy learning via doubly robust empirical welfare maximization over trees. Journal of Open Source Software, 5(50), 2232.  
+Yadlowsky, S., Fleming, S., Shah, N., Brunskill, E., & Wager, S. (2021). Evaluating treatment prioritization rules via rank-weighted average treatment effects. arXiv preprint arXiv:2111.07966.  
+
+Other references:
+GRF package documentation (2023): https://grf-labs.github.io/grf/index.html  
+GRF Github repository (2023): https://github.com/grf-labs/grf  
+Policytree documentation (2022): https://grf-labs.github.io/policytree/articles/policytree.html   
