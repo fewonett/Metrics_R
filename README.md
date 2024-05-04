@@ -1,3 +1,11 @@
+## Econometrics in R: Generalized random forests
+This repository displays my submission for the university course Econometrics in R. The topic is the 
+Generalized Random Forests framework by Athey et al. (2019).  
+The code serves as an introduction to the grf package and subsequently uses it to analyse the carvalho (2016)
+RCT dataset with regards to heterogenous treatment effects. See below for an introduction and description of the code structure.  
+The following files are contained in this repository:  
+- ```code/Generalized_Random_Forests.R```: The main code file. Sections are outlined below. After adjusting the working directory the code should run out of the box.
+- ```code/carvalho2016.csv```: The RCT dataset.
 
 ### Introduction:
 In their paper “Generalized Random Forests” Athey et al. (2019) develop a general
@@ -16,7 +24,8 @@ effects. The conditional average treatment effects (E(treatment effect| X)) are
 not assumed to follow any defined functional form. In this context, causal forests
 – one specific method derived from the generalized random forests (GRF) framework – 
 will play an important role. In random forests, the optimal splits of the covariate
-space when growing individual trees are typically chosen based on mean squared errors. Causal forests however, choose the splits based on treatment
+space when growing individual trees are typically chosen based on mean squared errors. 
+Causal forests however, choose the splits based on treatment
 effect heterogeneity: For each possible split, the treatment effects within the
 partitioned groups are estimated, and subsequently, the split with the greatest 
 possible difference in treatment effects is chosen. Additionally, a fraction of 
@@ -28,10 +37,10 @@ training observations. The similarity scores are then used as weights, when calc
 the treatment effect predictions as a weighted average of the treatment effects 
 of similar datapoints in the training data. This way an individual treatment effect
 prediction conditional on the covariate values can be generated for every datapoint.
-In section 1 I will explore certain properties of random and causal forests.For 
-an in-detail discussion of the algorithms see section 6.2 of Athey et al. (2019)
+For an in-detail discussion of the algorithms see section 6.2 of Athey et al. (2019)
 and the algorithmic reference section of the grf documentation (2023).
-My code will be structured into two main sections:
+
+#### Structure of the code
 In the first section, I will introduce the reader to the functionalities and syntax
 of the grf package. The parameters of the main functions will be explained as well.
 A synthetic dataset is created and used to apply the explained theory. 
@@ -43,18 +52,18 @@ forest. In a first effort to grasp treatment effect heterogeneity, the best line
 projection of the treatment effects based on the covariates is retrieved in section
 2.2: Assuming linearity, by how much does the conditional average treatment effect
 in- or decrease in each covariate?
-In section 2.3 I turn towards the main task of the thesis: Recreating figure 9
-of Carter et al. (2019) to answer the question: How do treatment effects change
-in one covariate while all other covariates are held constant at a certain percentile?
+In section 2.3 I turn towards the main task of the project: Recreating figure 9
+of Carter et al. (2019) to analize how conditional treatment effects change in one covariate
+while all other covariates are held constant at a fixed percentile.
 In section 2.4 and 2.5 I explore possibility of targeting high-treatment-effect
 units. First, I use the rank-weighted average treatment (Yadlowsky et al. (2021)) 
 effect which helps to evaluate possible targeting rules derived from a causal forest.
 Second, the package policytree (after Sverdrup et al. (2019)) is used to create 
 a tree-based rule in order to target units with very high or low treatment effects.
-Throughout the thesis explanatory comments are added both with regards to econometric
+Throughout the project explanatory comments are added both with regards to econometric
 theory and the code.
 
-### References in scientific literature:
+#### References in scientific literature:
 Athey, S., Tibshirani, J., & Wager, S. (2019). Generalized random forests.  
 Carter, M. R., Tjernström, E., & Toledo, P. (2019). Heterogeneous impact dynamics of a rural business development program in Nicaragua. Journal of Development Economics, 138, 77-98.  
 Carvalho, L. S., Meier, S., & Wang, S. W. (2016). Poverty and economic decision-making: Evidence from changes in financial resources at payday. American economic review, 106(2), 260-284.  
