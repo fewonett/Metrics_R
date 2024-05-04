@@ -62,7 +62,7 @@ Farbmacher, H., Kögel, H., & Spindler, M. (2021). Heterogeneous effects of pove
 Sverdrup, E., Kanodia, A., Zhou, Z., Athey, S., & Wager, S. (2020). policytree: Policy learning via doubly robust empirical welfare maximization over trees. Journal of Open Source Software, 5(50), 2232.  
 Yadlowsky, S., Fleming, S., Shah, N., Brunskill, E., & Wager, S. (2021). Evaluating treatment prioritization rules via rank-weighted average treatment effects. arXiv preprint arXiv:2111.07966.  
 
-Other references:
+#### Other references:  
 GRF package documentation (2023): https://grf-labs.github.io/grf/index.html  
 GRF Github repository (2023): https://github.com/grf-labs/grf  
 Policytree documentation (2022): https://grf-labs.github.io/policytree/articles/policytree.html   
