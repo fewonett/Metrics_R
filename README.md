@@ -1,8 +1,6 @@
 ## Econometrics in R: Generalized random forests
 This repository displays my submission for the university course Econometrics in R. The topic is the 
-Generalized Random Forests framework by Athey et al. (2019).  
-The code serves as an introduction to the grf package and subsequently uses it to analyse the carvalho (2016)
-RCT dataset with regards to heterogenous treatment effects. See below for an introduction and description of the code structure.  
+Generalized Random Forests framework by Athey et al. (2019).  The code serves as an introduction to the grf package and subsequently uses it to analyse the carvalho (2016) RCT dataset with regards to heterogenous treatment effects. See below for an introduction and description of the code structure.  
 The following files are contained in this repository:  
 - ```code/Generalized_Random_Forests.R```: The main code file. Sections are outlined below. After adjusting the working directory the code should run out of the box.
 - ```code/carvalho2016.csv```: The RCT dataset.
